@@ -47,7 +47,7 @@ and print the equivalent character.
   c) while(i = 5) {}
   d) while((i = 12)!=5) {}
       
-      Following will compile: (Why? TODO)
+      Following will compile:
         a) while (i < j) {  }
         b) while ((i = 12) != 5) {  }
 
