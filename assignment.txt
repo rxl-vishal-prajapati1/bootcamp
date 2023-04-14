@@ -18,7 +18,7 @@ Answer:
       int x = sc.nextInt();
       if (x > 0) ++pos;
       else if (x == 0) ++zeroes;
-      else ++zeroes;
+      else ++neg;
 
       if (x % 2 == 0) ++even;
       else ++odd;
