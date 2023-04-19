@@ -13,4 +13,9 @@
 * [Java Part 3](https://github.com/rxl-vishal-prajapati1/bootcamp/tree/java_part_3)  
 
 
+## Groovy
+
+* [Groovy Part 1](https://github.com/rxl-vishal-prajapati1/bootcamp/tree/groovy_1)  
+
+
 
