@@ -218,7 +218,7 @@ try replacing test with various objects and observe its behaviour.
 >HourMinute two = new HourMinute(hour: 8, minute: 20);
 >
 >println(one + two) // 11 : 40
->// one is now 6:40
+>// one is now 11:40
 >println(one - two) // 3 : 20
 >
 > ```
