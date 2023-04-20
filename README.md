@@ -604,18 +604,24 @@ Perform the following operations on the list of employees:
 
 **Program**
 > ```groovy
-> Map url_key_value = [:]
-> 
-> String url = "http://www.google.com/?name=johny&age=20&hobby=cricket";
-> def (_, params) = url.tokenize('?');
-> params.tokenize('&').each {
->     String key_value ->
->     def (key, value) = key_value.tokenize("=")
->         url_key_value[key] = value;
-> }
-> 
-> println url_key_value
-> // [name:johny, age:20, hobby:cricket]
+>def findValue(String url, String key) {
+>    String value = null;
+>    def (_, params) = url.tokenize('?')
+>    params.tokenize('&').each {
+>        String key_value ->
+>            def (curr_key, curr_value) = key_value.tokenize("=")
+>            if (key == curr_key) {
+>                value = curr_value
+>            }
+>    }
+>    return value
+>}
+>
+>String url = "http://www.google.com/?name=johny&age=20&hobby=cricket";
+>println (findValue(url, "name"))
+>println (findValue(url, "age"))
+>println (findValue(url, "hobby"))
+>
 > ```
 
 ---
