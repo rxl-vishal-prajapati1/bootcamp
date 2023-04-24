@@ -462,7 +462,7 @@ Is this a valid construction?
 
 >**Answer**
 >```
->The compile compiles without problem. 
+>The compiles without problem. 
 >But it contains two entries for '2'.   
 >Map contains unique keys so for key '2' the value is 5 which appeared later.
 >```
