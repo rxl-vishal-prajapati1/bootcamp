@@ -1,13 +1,13 @@
 ## GORM Assignment
 
-```grails
+```groovy
 new Company(name: "Amazon", city: "Noida", pinCode: 1234).save()
 new Company(name: "Flipkart", city: "Banglore", pinCode: 1234).save()
 new Company(name: "", city: "Delhi", pinCode: 1234).save()
 new Company(name: "Abott", city: "Delhi", pinCode: 1234).save()
 new Company(name: "Aditya Biral", city: "Pune", pinCode: 1234).save(flush: true, failOnError: true)
 ```
-```grails
+```groovy
 // Populate employees
 new Employee(name: "Tulsi", city: "Delhi", phoneNumber: 1234567890, employeeId: 1, company: Company.findByName('Apple')).save();
 new Employee(name: "Akhil", city: "Banglore", phoneNumber: 2234567890, employeeId: 1, company: Company.findByName('Amazon')).save();
